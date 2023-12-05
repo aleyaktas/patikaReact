@@ -3,6 +3,8 @@
   --primary-color: #023047;
   --background-color: #f4f4f4;
   --border-color: #ddd;
+  --item-background-color: #f3f1f4;
+  --button-text: #0395de;
 }
 
 /* Global reset */
@@ -85,7 +87,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: #f3f1f4;
+  background-color: var(--item-background-color);
   padding: 4px 8px;
 }
 
@@ -100,4 +102,19 @@ body {
 
 .completed-text {
   text-decoration: line-through;
+}
+
+.button-list {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.filter-button {
+  padding: 8px 10px;
+  border: none;
+  color: var(--button-text);
+  background-color: white;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
 }

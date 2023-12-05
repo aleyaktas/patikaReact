@@ -1,0 +1,103 @@
+/* Root variables for color scheme */
+:root {
+  --primary-color: #023047;
+  --background-color: #f4f4f4;
+  --border-color: #ddd;
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set base font size for better responsiveness */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+.header {
+  margin-right: auto;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  height: 80vh;
+  overflow-y: scroll;
+
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.form {
+  width: 100%;
+}
+
+.add-todo-container {
+  display: flex;
+  gap: 8px;
+}
+
+.add-todo-input {
+  flex: 1;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.add-todo-button {
+  border: 1px solid lightgray;
+  padding: 0 10px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-list-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f3f1f4;
+  padding: 4px 8px;
+}
+
+.todo-item {
+  list-style: none;
+  flex: 1;
+}
+
+.check-button {
+  border: none;
+}
+
+.completed-text {
+  text-decoration: line-through;
+}

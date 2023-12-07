@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+select {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  border: none;
+}

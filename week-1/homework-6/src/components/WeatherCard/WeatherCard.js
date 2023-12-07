@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 
 // WeatherCard component for displaying weather information for a specific day.
-const WeaterCard = ({ day }) => {
+const WeatherCard = ({ day }) => {
   return (
     <div key={day.date} className={styles.weather}>
       {/* Displaying the date of the weather data. */}
@@ -14,4 +14,4 @@ const WeaterCard = ({ day }) => {
   );
 };
 
-export default WeaterCard;
+export default WeatherCard;

@@ -1,7 +1,8 @@
 import React from "react";
+import { useWeather } from "../../context/Weather";
 
 // Component for a selectable cities dropdown.
-function CitiesSelectBox({ onChange }) {
+function CitiesSelectBox() {
   // List of cities with name and corresponding value
   const cities = [
     { name: "adana", value: "Adana" },
@@ -87,9 +88,11 @@ function CitiesSelectBox({ onChange }) {
     { name: "zonguldak", value: "Zonguldak" },
   ];
 
+  const { handleCityChange } = useWeather();
+
   return (
     <div>
-      <select onChange={onChange}>
+      <select onChange={(e) => handleCityChange(e)}>
         {/* Maps through the list of cities, creating an option for each city. */}
         {cities.map((city, index) => (
           <option key={index} value={city.name}>

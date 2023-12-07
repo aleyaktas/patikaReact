@@ -1,17 +1,19 @@
 import React from "react";
 import styles from "./styles.module.css";
-import WeaterCard from "../WeaterCard/WeaterCard";
+import { useWeather } from "../../context/Weather";
+import WeatherCard from "../WeatherCard/WeatherCard";
 
 // WeatherCardList component for displaying a list of weather cards.
-const WeaterCardList = ({ weather }) => {
+const WeatherCardList = () => {
+  const { weather } = useWeather();
   return (
     <div className={styles.weatherContainer}>
       {/* Mapping through each day in the forecast and rendering a WeatherCard for each. */}
       {weather?.forecast?.forecastday?.map((day) => (
-        <WeaterCard day={day} />
+        <WeatherCard day={day} />
       ))}
     </div>
   );
 };
 
-export default WeaterCardList;
+export default WeatherCardList;

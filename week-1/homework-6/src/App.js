@@ -1,11 +1,12 @@
 import "./App.css";
 import Home from "./components/Home/Home";
+import { WeatherProvider } from "./context/Weather";
 
 function App() {
   return (
-    <div>
+    <WeatherProvider>
       <Home />
-    </div>
+    </WeatherProvider>
   );
 }
 

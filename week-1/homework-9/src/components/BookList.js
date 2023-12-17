@@ -1,6 +1,8 @@
 import BookCard from "./BookCard";
 
 const BookList = ({ book }) => {
+  /* The code is returning a JSX element, which is a div element with some styling and a BookCard
+  component inside it. */
   return (
     <div
       key={book.id}

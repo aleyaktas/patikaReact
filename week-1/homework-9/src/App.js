@@ -5,6 +5,8 @@ import Details from "./screens/Details";
 
 function App() {
   return (
+    /* The code is setting up the routing configuration for a React application using the react-router-dom
+    library. */
     <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Home />} />

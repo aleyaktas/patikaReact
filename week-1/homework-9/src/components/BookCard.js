@@ -4,6 +4,8 @@ import rightIcon from "../assets/icons/right.svg";
 const BookCard = ({ book }) => {
   const navigate = useNavigate();
 
+  /* The `return` statement in the `BookCard` component is returning JSX code that represents the
+  structure and content of a book card. */
   return (
     <>
       <div className="w-full h-auto md:w-56 md:h-96 shadow-sm hover:animate-pulse">

@@ -12,6 +12,9 @@ const Details = () => {
 
   const [book, setBook] = useState();
 
+  /* The `details` constant is an array of objects that define the properties of a book that will be
+  displayed in the book detail card. Each object in the array has two properties: `name` and
+  `value`. */
   const details = [
     {
       name: "Title",
@@ -39,6 +42,11 @@ const Details = () => {
     },
   ];
 
+  /**
+   * The function `getBookDetail` makes an asynchronous HTTP GET request to the Google Books API to
+   * retrieve details about a book using the provided book ID and API key, and then sets the retrieved
+   * book data in the state.
+   */
   const getBookDetail = async () => {
     try {
       await axios

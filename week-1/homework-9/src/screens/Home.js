@@ -8,6 +8,10 @@ const Home = () => {
   const [searchText, setSearchText] = useState();
   const [books, setBooks] = useState([]);
 
+  /**
+   * The function `getBooks` makes an asynchronous request to the Google Books API to retrieve a list of
+   * books based on a search query, and then sets the retrieved books in the state.
+   */
   const getBooks = async () => {
     try {
       await axios
@@ -35,6 +39,8 @@ const Home = () => {
       />
 
       <div className="flex flex-wrap justify-center md:justify-around xl:justify-between gap-24 w-full h-full">
+        {/* The code is mapping over the `books` array and rendering a `BookList` component
+        for each book in the array.  */}
         {books &&
           books.map((book) => {
             return book.volumeInfo.imageLinks && <BookList book={book} />;

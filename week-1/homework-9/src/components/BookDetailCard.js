@@ -1,4 +1,6 @@
 const BookDetailCard = ({ book, details }) => {
+  /* The code is defining a functional component called `BookDetailCard` that takes two props: `book`
+  and `details`. */
   return (
     <div className="flex gap-20 w-full items-center flex-col xl:flex-row xl:w-3/4 h-auto border border-gray-400 rounded-md p-10">
       <img
@@ -7,6 +9,8 @@ const BookDetailCard = ({ book, details }) => {
         alt={book.volumeInfo.title}
       />
       <div className="flex flex-col">
+        {/* The code block is using the `map` function to iterate over
+       an array called `details` */}
         {details.map((detail) => (
           <div className="flex flex-col  gap-1">
             <span className="text-lg font-bold text-gray-700 ">
